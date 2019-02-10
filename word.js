@@ -13,9 +13,7 @@ var Word = function(){
     this.guessWord = function(str){
         //var guessCheck = false;
         for(var i=0; i<this.letterArr.length; i++){
-            if(this.letterArr[i].check(str)){
-                var guessCheck = true;
-            };
+            this.letterArr[i].check(str);
         }
         if(guessCheck){
             console.log("CORRECT !!!")
